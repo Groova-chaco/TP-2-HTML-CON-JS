@@ -11,27 +11,25 @@
 <body>
     <header>
         <div class="card bg-dark text-white">
-            <div class="card-img-overlay">
-                <nav class="navbar navbar-expand-md navbar-dark">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">Conf Bs As</a>
-                    </div>
-                    <div class="container">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                                <a class="nav-link" href="#">Los oradores</a>
-                                <a class="nav-link" href="#">El lugar y la fecha</a>
-                                <a class="nav-link" href="#">Conviertete en orador</a>
-                                <a class="nav-link" href="#" style="color: rgb(30, 129, 27);">Comprar tickets<a>
-                            </div>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Conf Bs As</a>
+                </div>
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                            <a class="nav-link" href="#">Los oradores</a>
+                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                            <a class="nav-link" href="#">Conviertete en orador</a>
+                            <a class="nav-link" href="#" style="color: rgb(30, 129, 27);">Comprar tickets<a>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
-    <section class="container">
+    <section class="container-md" style="max-width: 760px;">
         <div class="row row-cols-1 row-cols-md-3 g-5">
             <div class="col">
                 <div class="card">
@@ -76,40 +74,27 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="slide">
-        <div class="container-fluid mt-5">
+        <div>
+            <p class="titulo" style= "padding-top: 14px;">CONVIERTETE EN UN</p>
+            <p class="titulo" style= "font-size: 50px; padding-bottom: 5px;">ORADOR</p>
+            <p class="titulo" style="padding-bottom: 5px;">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
             <div class="row">
-                <div class="col-md">
-                    <img src="/images/honolulu.jpg" class="img-fluid rounded-start">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                 </div>
-                <div class="col-md">
-                    <div class="text-white" style="background-color: rgba(32, 37, 43, 0.829); height: 100%;">
-                        <h4 class="card-title">Bs As - Octubre</h4>
-                        <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argenina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honalulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 300km2 de superficie).</p>
-                        <button type="button" class="btn btn-outline-light">Conocé más</button>
-                    </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                 </div>
+                <div class="input-group-lg">
+                    <textarea class="form-control" placeholder="Sobre qué quieres hablar?" aria-label="With textarea"></textarea>
+                    <p>Recuerda incluir un titulo para tu charla</p>
+                </div>
+                <button type="button" class="btn btn-success btn-lg btn-block">ENVIAR</button>
             </div>
         </div>
     </section>
-    <section class="container-fluid" style="max-width: 760px;">
-        <p class="titulo" style= "padding-top: 14px;">CONVIERTETE EN UN</p>
-        <p class="titulo" style= "font-size: 50px; padding-bottom: 5px;">ORADOR</p>
-        <p class="titulo" style="padding-bottom: 5px;">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-            </div>
-            <div class="input-group-lg">
-                <textarea class="form-control" placeholder="Sobre qué quieres hablar?" aria-label="With textarea"></textarea>
-                <p>Recuerda incluir un titulo para tu charla</p>
-            </div>
-            <button type="button" class="btn btn-success btn-lg btn-block">ENVIAR</button>
-        </div>
+    <section class="container-fluid">
+
     </section>
     <footer class="container-fluid" style="padding: 15px 0 0 0;">
         <ul class="nav">
